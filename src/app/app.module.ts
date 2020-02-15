@@ -14,6 +14,7 @@ import { NavComponent } from './nav/nav.component';
 //Angular Material
 import {MatGridListModule} from '@angular/material/grid-list';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     MeetComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

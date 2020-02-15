@@ -1,19 +1,28 @@
 <mat-grid-list cols="9" rowHeight="50px" class="tabs">
-  <mat-grid-tile></mat-grid-tile><mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile style="pointer-events: none"></mat-grid-tile><mat-grid-tile style="pointer-events: none"></mat-grid-tile>
   <mat-grid-tile *ngIf = "home == true" class = "current">
     Home
   </mat-grid-tile><mat-grid-tile (click) = "tab('home')" *ngIf = "home == false">Home</mat-grid-tile>
-  <mat-grid-tile *ngIf = "doctors == true" class = "current">
-    Doctors
-  </mat-grid-tile><mat-grid-tile (click) = "tab('doctors')" *ngIf = "doctors == false">Doctors</mat-grid-tile>
-  <mat-grid-tile *ngIf = "patients == true" class = "current">
-    Patients
-  </mat-grid-tile><mat-grid-tile (click) = "tab('patients')" *ngIf = "patients == false">Patients</mat-grid-tile>
-  <mat-grid-tile *ngIf = "providers == true" class = "current">
-    Providers
-  </mat-grid-tile><mat-grid-tile (click) = "tab('providers')" *ngIf = "providers == false">Providers</mat-grid-tile>
+  <mat-grid-tile *ngIf = "about == true" class = "current">
+    About Us
+  </mat-grid-tile><mat-grid-tile (click) = "tab('about')" *ngIf = "about == false">About Us</mat-grid-tile>
+  <mat-grid-tile *ngIf = "team == true" class = "current">
+    Meet The Team
+  </mat-grid-tile><mat-grid-tile (click) = "tab('team')" *ngIf = "team == false">Meet The Team</mat-grid-tile>
+  <mat-grid-tile *ngIf = "coin == true" class = "current">
+    D-Coin
+  </mat-grid-tile><mat-grid-tile (click) = "tab('coin')" *ngIf = "coin == false">D-Coin</mat-grid-tile>
   <mat-grid-tile *ngIf = "logIn == true" class = "current">
     Log In
   </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false">Log In</mat-grid-tile>
-  <mat-grid-tile></mat-grid-tile><mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile style="pointer-events: none"></mat-grid-tile><mat-grid-tile style="pointer-events: none"></mat-grid-tile>
 </mat-grid-list>
+
+
+<div *ngIf="home == true">
+  <app-home></app-home>
+</div>
+<div *ngIf="logIn == true">
+  Login
+  <app-login></app-login>
+</div>
