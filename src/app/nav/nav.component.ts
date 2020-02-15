@@ -8,45 +8,45 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   home = true;
-  doctors = false;
-  patients = false;
-  providers = false;
+  about = false;
+  team = false;
+  coin = false;
   logIn = false;
 
   tab(tabName){
       if(tabName == 'home'){
         this.home = true;
-        this.doctors = false;
-        this.patients = false;
-        this.providers = false;
+        this.about = false;
+        this.team = false;
+        this.coin = false;
         this.logIn = false;
       }
-      else if(tabName == 'doctors'){
+      else if(tabName == 'about'){
         this.home = false;
-        this.doctors = true;
-        this.patients = false;
-        this.providers = false;
+        this.about = true;
+        this.team = false;
+        this.coin = false;
         this.logIn = false;
       }
-      else if(tabName == 'patients'){
+      else if(tabName == 'team'){
         this.home = false;
-        this.doctors = false;
-        this.patients = true;
-        this.providers = false;
+        this.about = false;
+        this.team = true;
+        this.coin = false;
         this.logIn = false;
       }
-      else if(tabName == 'providers'){
+      else if(tabName == 'coin'){
         this.home = false;
-        this.doctors = false;
-        this.patients = false;
-        this.providers = true;
+        this.about = false;
+        this.team = false;
+        this.coin = true;
         this.logIn = false;
       }
       else if(tabName == 'logIn'){
         this.home = false;
-        this.doctors = false;
-        this.patients = false;
-        this.providers = false;
+        this.about = false;
+        this.team = false;
+        this.coin = false;
         this.logIn = true;
       }
   }
