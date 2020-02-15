@@ -18,6 +18,10 @@
   <mat-grid-tile style="pointer-events: none"></mat-grid-tile><mat-grid-tile style="pointer-events: none"></mat-grid-tile>
 </mat-grid-list>
 
+
+<div *ngIf="home == true">
+  <app-home></app-home>
+</div>
 <div *ngIf="logIn == true">
   Login
   <app-login></app-login>
