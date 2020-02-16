@@ -11,7 +11,7 @@
   </mat-grid-tile><mat-grid-tile (click) = "tab('team')" *ngIf = "team == false" [routerLink] = "['/meet']">Meet The Team</mat-grid-tile>
   <mat-grid-tile *ngIf = "coin == true" class = "current">
     D-Coin
-  </mat-grid-tile><mat-grid-tile (click) = "tab('coin')" *ngIf = "coin == false">D-Coin</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('coin')" *ngIf = "coin == false"[routerLink] = "['/dcoin']">D-Coin</mat-grid-tile>
   <mat-grid-tile *ngIf = "logIn == true" class = "current">
     Log In
   </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false" [routerLink] = "['/login']">Log In</mat-grid-tile>

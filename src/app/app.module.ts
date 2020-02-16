@@ -22,6 +22,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import { AuthComponent } from './auth/auth.component';
 import { FooterComponent } from './footer/footer.component';
+import { DcoinComponent } from './dcoin/dcoin.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     CalendarComponent,
     AuthComponent,
-    FooterComponent
+    FooterComponent,
+    DcoinComponent
   ],
   imports: [
     BrowserModule,
