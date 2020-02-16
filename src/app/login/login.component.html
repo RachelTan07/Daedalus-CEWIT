@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="login">
+  <div class="title">LOGIN<br>
+    <div class="input">
+        Username<br>
+        Password<br>
+
+        <input #box (keyup.enter)="onEnter(box.value)">
+    <p>{{value}}</p>
+        <button (click)="onEnter(box.value)">sign In</button>
+
+        <p style="font-size: 11px">Don't have an account? Register here</p>
+    </div>
+</div>
+
+<!--
+Create a patient and doctor object with a specific username and password
+if it fails: username is incorrect, password is incorrect, please try again
+bring to dashboard upon login (dashboard differs depending on who it is)
+
+Register: registration page, have a service where user input can create a new object and then if it matches, allow user to login
+also need to identify whether the user is a patient or a doctor
+
+-->

@@ -2,7 +2,7 @@
   <mat-grid-tile style="pointer-events: none"></mat-grid-tile><mat-grid-tile style="pointer-events: none"></mat-grid-tile>
   <mat-grid-tile *ngIf = "home == true" class = "current">
     Home
-  </mat-grid-tile><mat-grid-tile (click) = "tab('home')" *ngIf = "home == false">Home</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('home')" *ngIf = "home == false" [routerLink] = "['']">Home</mat-grid-tile>
   <mat-grid-tile *ngIf = "about == true" class = "current">
     About Us
   </mat-grid-tile><mat-grid-tile (click) = "tab('about')" *ngIf = "about == false"[routerLink] = "['/about']">About Us</mat-grid-tile>
@@ -14,15 +14,6 @@
   </mat-grid-tile><mat-grid-tile (click) = "tab('coin')" *ngIf = "coin == false">D-Coin</mat-grid-tile>
   <mat-grid-tile *ngIf = "logIn == true" class = "current">
     Log In
-  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false">Log In</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false" [routerLink] = "['/login']">Log In</mat-grid-tile>
   <mat-grid-tile style="pointer-events: none"></mat-grid-tile><mat-grid-tile style="pointer-events: none"></mat-grid-tile>
 </mat-grid-list>
-
-
-<div *ngIf="home == true">
-  <app-home></app-home>
-</div>
-<div *ngIf="logIn == true">
-  Login
-  <app-login></app-login>
-</div>

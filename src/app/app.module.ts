@@ -19,6 +19,9 @@ import { CalendarComponent } from './calendar/calendar.component';
 
 //Angular Material
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDividerModule} from '@angular/material/divider';
+import { AuthComponent } from './auth/auth.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,7 +32,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     NavComponent,
     LoginComponent,
     HomeComponent,
-    CalendarComponent
+    CalendarComponent,
+    AuthComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     HttpClientModule,
     HttpModule,
     FullCalendarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
