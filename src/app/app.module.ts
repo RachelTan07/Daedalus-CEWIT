@@ -29,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoadingComponent } from './loading/loading.component';
 import { DcoinComponent } from './dcoin/dcoin.component';
+import {MatListModule} from '@angular/material/list';
 
 export function playerFactory() {
   return player;
@@ -61,7 +62,8 @@ export function playerFactory() {
     MatDividerModule,
     FormsModule,
     LottieModule.forRoot({ player: playerFactory }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
