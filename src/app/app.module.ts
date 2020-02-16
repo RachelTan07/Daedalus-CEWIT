@@ -23,7 +23,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import { AuthComponent } from './auth/auth.component';
 import { FooterComponent } from './footer/footer.component';
+<<<<<<< HEAD
 import { DashboardComponent } from './dashboard/dashboard.component';
+=======
+import { DcoinComponent } from './dcoin/dcoin.component';
+>>>>>>> 9ae3f54d974dead46ff63c122a36f151031083b7
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CalendarComponent,
     AuthComponent,
     FooterComponent,
+<<<<<<< HEAD
     DashboardComponent,
+=======
+    DcoinComponent
+>>>>>>> 9ae3f54d974dead46ff63c122a36f151031083b7
   ],
   imports: [
     BrowserModule,
