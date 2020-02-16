@@ -1,5 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <br><div class = "header"><img class = "logo" src = "/assets/logo.png"><br>DAEDALUS</div>
-<br><app-nav></app-nav>
-<br><mat-divider></mat-divider><br>
+<div div *ngIf="router.url != '/dashboard'">
+  <br><app-nav></app-nav>
+  <br><mat-divider></mat-divider><br>
+</div>
 <router-outlet></router-outlet>
+<app-footer></app-footer>

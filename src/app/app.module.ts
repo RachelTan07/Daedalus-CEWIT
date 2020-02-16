@@ -11,6 +11,7 @@ import { MeetComponent } from './meet/meet.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { FormsModule } from '@angular/forms';
 
 //Components
 import { LoginComponent } from './login/login.component';
@@ -22,6 +23,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import { AuthComponent } from './auth/auth.component';
 import { FooterComponent } from './footer/footer.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     CalendarComponent,
     AuthComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpModule,
     FullCalendarModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
