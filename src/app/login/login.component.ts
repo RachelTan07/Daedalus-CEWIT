@@ -9,6 +9,16 @@ import { NgxXml2jsonService } from 'ngx-xml2json';
 })
 export class LoginComponent implements OnInit {
 
+
+  value = '';
+  onEnter(value: string) {
+    this.value = value;
+    console.log(this.value);
+  }
+
+  
+
+
   constructor(
     private http:Http,
     private ngxXml2jsonService: NgxXml2jsonService
