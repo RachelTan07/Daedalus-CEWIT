@@ -10,11 +10,16 @@ import { AboutComponent } from './about/about.component';
 import { MeetComponent } from './meet/meet.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+
+//Components
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 //Angular Material
 import {MatGridListModule} from '@angular/material/grid-list';
-import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     MeetComponent,
     NavComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,7 @@ import { HomeComponent } from './home/home.component';
     NoopAnimationsModule,
     HttpClientModule,
     HttpModule,
-
+    FullCalendarModule,
     MatGridListModule
   ],
   providers: [],
