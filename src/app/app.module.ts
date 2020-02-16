@@ -23,8 +23,13 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import { AuthComponent } from './auth/auth.component';
 import { FooterComponent } from './footer/footer.component';
+<<<<<<< HEAD
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DcoinComponent } from './dcoin/dcoin.component';
+=======
+import { DcoinComponent } from './dcoin/dcoin.component';
+
+>>>>>>> da6d7cd81b04de0ce9d3d43f217d68030fbc7c40
 
 @NgModule({
   declarations: [
@@ -37,7 +42,10 @@ import { DcoinComponent } from './dcoin/dcoin.component';
     CalendarComponent,
     AuthComponent,
     FooterComponent,
+<<<<<<< HEAD
     DashboardComponent,
+=======
+>>>>>>> da6d7cd81b04de0ce9d3d43f217d68030fbc7c40
     DcoinComponent
   ],
   imports: [
