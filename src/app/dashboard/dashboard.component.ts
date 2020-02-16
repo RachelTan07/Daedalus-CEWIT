@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.sass']
 })
 export class DashboardComponent implements OnInit {
+  scheduling = true;
 
-  constructor() { }
+  switch(tab){
+    this.scheduling = false;
+    if(tab=='logout'){
+          this.router.navigateByUrl('');
+    }
+  }
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }

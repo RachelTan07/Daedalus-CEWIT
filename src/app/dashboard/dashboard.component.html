@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<mat-divider style="width: 60%; margin:auto"></mat-divider>
+<mat-grid-list cols="4" rowHeight="1:1" style="width: 70%; margin: auto" gutterSize = "0px">
+  <mat-grid-tile style="background: #484E4A">
+    <mat-list class="tabs">
+      <div *ngIf="scheduling == true">
+        <mat-list-item class="current"> Scheduling </mat-list-item>
+      </div>
+      <div *ngIf="scheduling == false">
+        <mat-list-item> Scheduling </mat-list-item>
+      </div>
+       <mat-list-item (click)="switch('info')"> Information </mat-list-item>
+       <mat-list-item (click)="switch('setting')"> Settings </mat-list-item>
+       <mat-list-item (click)="switch('logout')"> Logout </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]="3"><app-calendar style="width: 70%"></app-calendar></mat-grid-tile>
+  <mat-grid-tile style="background: #484E4A" [colspan]="1" [rowspan]="2"></mat-grid-tile>
+</mat-grid-list>
