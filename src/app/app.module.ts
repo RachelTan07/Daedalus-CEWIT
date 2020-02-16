@@ -12,6 +12,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { FormsModule } from '@angular/forms';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Components
 import { LoginComponent } from './login/login.component';
@@ -24,7 +27,12 @@ import {MatDividerModule} from '@angular/material/divider';
 import { AuthComponent } from './auth/auth.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoadingComponent } from './loading/loading.component';
 import { DcoinComponent } from './dcoin/dcoin.component';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -38,7 +46,9 @@ import { DcoinComponent } from './dcoin/dcoin.component';
     AuthComponent,
     FooterComponent,
     DashboardComponent,
-    DcoinComponent
+    DcoinComponent,
+    LoadingComponent
+
   ],
   imports: [
     BrowserModule,
@@ -49,7 +59,9 @@ import { DcoinComponent } from './dcoin/dcoin.component';
     FullCalendarModule,
     MatGridListModule,
     MatDividerModule,
-    FormsModule
+    FormsModule,
+    LottieModule.forRoot({ player: playerFactory }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
