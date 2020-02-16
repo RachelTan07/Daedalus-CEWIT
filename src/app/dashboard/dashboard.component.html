@@ -8,7 +8,12 @@
       <div *ngIf="scheduling == false" (click)="switch('scheduling')">
         <mat-list-item> Scheduling </mat-list-item>
       </div>
-       <mat-list-item (click)="switch('info')"> Information </mat-list-item>
+      <div *ngIf="info == true">
+        <mat-list-item class="current"> Information </mat-list-item>
+      </div>
+      <div *ngIf="info == false" (click)="switch('info')">
+        <mat-list-item> Information </mat-list-item>
+      </div>
        <mat-list-item (click)="switch('setting')"> Settings </mat-list-item>
        <mat-list-item (click)="switch('logout')"> Logout </mat-list-item>
     </mat-list>
@@ -16,8 +21,9 @@
   <mat-grid-tile [colspan]="3" [rowspan]="3" *ngIf="scheduling==true">
     <app-calendar style="width: 70%"></app-calendar>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="3" [rowspan]="3" *ngIf="scheduling==false">
-    
+  <mat-grid-tile [colspan]="3" [rowspan]="3" *ngIf="info==true">
+    Name: Lincoln Wu<br>
+    Symptoms: Juandice, Toothache
   </mat-grid-tile>
   <mat-grid-tile style="background: #484E4A" [colspan]="1" [rowspan]="2"></mat-grid-tile>
 </mat-grid-list>

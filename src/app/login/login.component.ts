@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     if(this.username == "Lincoln.Wu" && this.password == "Juandice"){
       this.patient = true;
       this.router.navigateByUrl('/dashboard');
-    }else if(this.username == "Austin.Lee" && this.password == "PrimaryPhysician"){
+    }else if(this.username == "Austin.Lee" && this.password == "Doctor"){
       this.primary = true;
       this.router.navigateByUrl('/dashboard/doctor');
     }else if(this.username == "Karen.Smith" && this.password == "Dentist"){
