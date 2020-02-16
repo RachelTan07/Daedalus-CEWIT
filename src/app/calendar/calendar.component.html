@@ -1,1 +1,6 @@
-<full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins"></full-calendar>
+<full-calendar (dateClick)="handleClick($event)"
+  #calendar
+  [events]="calendarEvents"
+  defaultView="dayGridMonth"
+  [plugins]="calendarPlugins">
+</full-calendar>
