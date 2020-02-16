@@ -8,6 +8,13 @@
       <div *ngIf="scheduling == false" (click)="switch('scheduling')">
         <mat-list-item> Scheduling </mat-list-item>
       </div>
+      <div *ngIf="info == true">
+        <mat-list-item class="current"> Information </mat-list-item>
+      </div>
+      <div *ngIf="info == false" (click)="switch('info')">
+        <mat-list-item> Information </mat-list-item>
+      </div>
+
        <mat-list-item (click)="switch('info')"> Information </mat-list-item>
        <mat-list-item (click)="switch('setting')"> Settings </mat-list-item>
        <mat-list-item (click)="switch('logout')"> Logout </mat-list-item>

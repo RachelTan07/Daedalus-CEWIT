@@ -9,14 +9,17 @@ import { Router } from '@angular/router';
 })
 export class DoctorDashboardComponent implements OnInit {
   scheduling = true;
+  info = false;
 
   switch(tab){
     if(tab=='logout'){
         this.router.navigateByUrl('');
     }else if(tab=='scheduling'){
         this.scheduling = true;
-    }else{
+        this.info = false;
+    }else if(tab=='info'){
         this.scheduling = false;
+        this.info = true;
     }
   }
 
