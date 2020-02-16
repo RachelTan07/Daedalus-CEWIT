@@ -1,8 +1,18 @@
-<mat-grid-list cols="3" rowHeight="200px" class="info">
-  <mat-grid-tile style="background:pink" [colspan]="2" [rowspan]="2">
-    <img src="/assets/"
+<mat-grid-list cols="3" rowHeight="145px" class="info" gutterSize="5px">
+  <mat-grid-tile style="background:#50A2AE" [colspan]="2" [rowspan]="2">
+    <img src="/assets/images/slide-1.jpg">
   </mat-grid-tile>
-  <mat-grid-tile style="background:orange">
-    yes
+  <mat-grid-tile class="about" [rowspan]="2">
+    <div class="title">DAEDALUS<br>
+    <div class="about-text"><br>Daedalus is...</div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile class="about" [rowspan]="2">
+    <div class="title">TEAM<br>
+    <div class="about-text"><br>We are...</div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile style="background:#3895A3" [colspan]="2" [rowspan]="2">
+    <img src="/assets/images/slide-2.png">
   </mat-grid-tile>
 </mat-grid-list>

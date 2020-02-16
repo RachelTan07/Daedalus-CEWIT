@@ -14,12 +14,6 @@
   </mat-grid-tile><mat-grid-tile (click) = "tab('coin')" *ngIf = "coin == false">D-Coin</mat-grid-tile>
   <mat-grid-tile *ngIf = "logIn == true" class = "current">
     Log In
-  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false">Log In</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false" [routerLink] = "['/login']">Log In</mat-grid-tile>
   <mat-grid-tile style="pointer-events: none"></mat-grid-tile><mat-grid-tile style="pointer-events: none"></mat-grid-tile>
 </mat-grid-list>
-
-
-<div *ngIf="logIn == true">
-  Login
-  <app-login></app-login>
-</div>
