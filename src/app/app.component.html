@@ -1,10 +1,10 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<div [@endAnim]="isFinished ? 'starting' : 'finished'" style="z-index:1"><app-loading></app-loading></div>
+<!--<div [@endAnim]="isFinished ? 'starting' : 'finished'" style="z-index:1"><app-loading></app-loading></div>-->
 <div style="z-index:0">
   <router-outlet></router-outlet>
 </div>
 <!--<br><div class = "header"><img class = "logo" src = "/assets/logo.png"><br>DAEDALUS</div>-->
-<div div *ngIf="router.url != '/dashboard'">
+<div div *ngIf="router.url != '/dashboard' && router.url != '/dashboard/doctor'">
   <br><app-nav></app-nav>
   <br><mat-divider></mat-divider><br>
 </div>

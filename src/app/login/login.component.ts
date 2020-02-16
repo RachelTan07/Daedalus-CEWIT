@@ -25,10 +25,10 @@ export class LoginComponent implements OnInit {
       this.router.navigateByUrl('/dashboard');
     }else if(this.username == "Austin.Lee" && this.password == "PrimaryPhysician"){
       this.primary = true;
-      this.router.navigateByUrl('/dashboard');
+      this.router.navigateByUrl('/dashboard/doctor');
     }else if(this.username == "Karen.Smith" && this.password == "Dentist"){
       this.ortho = true;
-      this.router.navigateByUrl('/dashboard');
+      this.router.navigateByUrl('/dashboard/dentist');
     }else{
       this.error = true;
     }

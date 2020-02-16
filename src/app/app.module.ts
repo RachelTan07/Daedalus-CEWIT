@@ -30,6 +30,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoadingComponent } from './loading/loading.component';
 import { DcoinComponent } from './dcoin/dcoin.component';
 import {MatListModule} from '@angular/material/list';
+import { DoctorDashboardComponent } from './doctor-dashboard/doctor-dashboard.component';
+import { DentistDashboardComponent } from './dentist-dashboard/dentist-dashboard.component';
 
 export function playerFactory() {
   return player;
@@ -48,7 +50,9 @@ export function playerFactory() {
     FooterComponent,
     DashboardComponent,
     DcoinComponent,
-    LoadingComponent
+    LoadingComponent,
+    DoctorDashboardComponent,
+    DentistDashboardComponent
 
   ],
   imports: [

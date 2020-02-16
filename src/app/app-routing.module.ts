@@ -9,6 +9,8 @@ import { AuthComponent } from './auth/auth.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DcoinComponent } from './dcoin/dcoin.component';
+import { DoctorDashboardComponent } from './doctor-dashboard/doctor-dashboard.component';
+import { DentistDashboardComponent } from './dentist-dashboard/dentist-dashboard.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path: 'auth', component: AuthComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'dcoin', component: DcoinComponent}
+  {path: 'dcoin', component: DcoinComponent},
+  {path: 'dashboard/doctor', component: DoctorDashboardComponent},
+  {path: 'dashboard/dentist', component: DentistDashboardComponent}
 ];
 
 @NgModule({

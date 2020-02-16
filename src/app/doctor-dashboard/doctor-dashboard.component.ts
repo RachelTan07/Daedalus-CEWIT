@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.sass']
+  selector: 'app-doctor-dashboard',
+  templateUrl: './doctor-dashboard.component.html',
+  styleUrls: ['./doctor-dashboard.component.sass']
 })
-export class DashboardComponent implements OnInit {
+export class DoctorDashboardComponent implements OnInit {
   scheduling = true;
 
   switch(tab){
@@ -25,5 +26,4 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
