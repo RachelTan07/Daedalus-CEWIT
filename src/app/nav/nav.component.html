@@ -5,10 +5,10 @@
   </mat-grid-tile><mat-grid-tile (click) = "tab('home')" *ngIf = "home == false">Home</mat-grid-tile>
   <mat-grid-tile *ngIf = "about == true" class = "current">
     About Us
-  </mat-grid-tile><mat-grid-tile (click) = "tab('about')" *ngIf = "about == false">About Us</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('about')" *ngIf = "about == false"[routerLink] = "['/about']">About Us</mat-grid-tile>
   <mat-grid-tile *ngIf = "team == true" class = "current">
     Meet The Team
-  </mat-grid-tile><mat-grid-tile (click) = "tab('team')" *ngIf = "team == false">Meet The Team</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('team')" *ngIf = "team == false" [routerLink] = "['/meet']">Meet The Team</mat-grid-tile>
   <mat-grid-tile *ngIf = "coin == true" class = "current">
     D-Coin
   </mat-grid-tile><mat-grid-tile (click) = "tab('coin')" *ngIf = "coin == false">D-Coin</mat-grid-tile>

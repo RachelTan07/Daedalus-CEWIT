@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { MeetComponent } from './meet/meet.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
@@ -22,6 +24,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
+    AboutComponent,
+    MeetComponent,
     NavComponent,
     LoginComponent,
     HomeComponent,
