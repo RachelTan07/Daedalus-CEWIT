@@ -46,8 +46,12 @@ export function playerFactory() {
     AuthComponent,
     FooterComponent,
     DashboardComponent,
+<<<<<<< HEAD
     DcoinComponent,
     LoadingComponent
+=======
+    DcoinComponent
+>>>>>>> a0ba65b48d0409c127960c391c79508894f3d589
   ],
   imports: [
     BrowserModule,
